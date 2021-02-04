@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+   <title>Datos Covid</title>
+</head>
+<body>
+<header>
+    <a href="index.html">
+        <svg height="50px" version="1.1" width="150px"
+             xmlns="http://www.w3.org/2000/svg">
+            <image height="100%" href="img/infocovid.svg" width="100%" x="0" y="0"/>
+        </svg>
+    </a>
+    <nav>
+        <a href="medidas_bienestar.html">Medidas de bienestar</a>
+        <span>|</span>
+        <a class="active" href="web_salut.html">Los datos</a>
+        <span>|</span>
+        <a href="certificado.html">Certificado autorresponsable</a>
+    </nav>
+</header>
+<main>
+    <section>
+        <h1>La web Salut/Datos Covid</h1>
+        <p>El objetivo de la web es facilitar de forma pública y transparente el Seguimiento epidemiológico de la
+            pandemia
+            de la Covidien-19 a través de la monitorización de los indicadores clave definidos en el plan de control de
+            la
+            transmision de la Covidien-19 en Cataluña.
+        </p>
+    </section>
+    <article>
+        <section>
+        <h2>Justificación de los conceptos clave</h2>
+        <p>
+            A continuación explicamos 4 conceptos que utilizamos en todos los indicadores y justificamos el motivo.
+        </p>
+        </section>
+
+        <section>
+            <h3>
+                Usamos los casos COVID-19 confirmados por PCR/TA para el seguimiento epidemiológico
+            </h3>
+            <p>
+                Primero de todo, los casos de COVID-19 confirmados para hacer un seguimiento epidemiológico son
+                exclusivamente
+                los confirmados por PCR/TA, ya que la PCR/TA positiva nos indica que es un caso activo y para el
+                seguimiento
+                epidemiológico, es importante la fecha en que se inicia el caso.
+            </p>
+        </section>
+        <section>
+            <h3>
+                No usamos los casos COVID-19 confirmados por los test rápidos serológicos o por ELISA
+            </h3>
+            <p>
+                En segundo lugar y como consecuencia del primero, no usaremos para el seguimiento epidemiológico los
+                test serológicos ni las pruebas ELISA que se han hecho para los estudios de seroprevalencia, porque la
+                información que nos dan es el estado inmunológico de la persona, pero se desconoce en qué fecha aquella persona ha
+                sido un caso activo. No se pueden imputar estas pruebas a la fecha de realización ya que nos darían una falsa
+                sensación de incremento de casos cuando es el contrario: son personas inmunizadas y que han sido casos en el
+                pasado.
+            </p>
+        </section>
+        <section>
+            <h3>
+                Tenemos que diferenciar el seguimiento según si la población es general de residencia
+            </h3>
+            <p>
+                Y en tercer lugar, es importante diferenciar dos poblaciones: la general y la de las residencias, ya que
+                su comportamiento epidemiológico es completamente diferente, como ya se ha podido ver en la primera oleada.
+                Por un lado, la población general vive en la comunidad y se relaciona y se mueve de una manera determinada. Las
+                personas ingresadas en las residencias geriátricas viven en comunidades muy cerradas y en lugares muy
+                cerrados y su movilidad es muy reducida. Dadas estas características, no se puede hacer un seguimiento
+                epidemiológico conjunto de las dos poblaciones y por este motivo, en la página web presentamos los datos por separado.
+            </p>
+        </section>
+        <section>
+            <h3>
+                Dónde imputamos la fecha del caso?
+            </h3>
+            <p>
+                A diferencia de otras fuentes y por motivos epidemiológicos, imputamos el inicio del caso en función de
+                la
+                fecha
+                más antigua que tenemos, sea la fecha del diagnóstico de COVID-19 de Atención Primaria (si existe) o de
+                la
+                realización de la PCR/TA positiva, ya que estas dos fechas nos indican el inicio del caso. Ver la
+                definición
+                de
+                caso confirmado por PCR/TA para más detalles.
+            </p>
+        </section>
+    </article>
+    <article>
+        <section>
+        <h2>Características de la página web</h2>
+        <p>
+            El origen de los datos sobre el seguimiento epidemiológico de la COVID-19 en Catalunya es diverso y
+            cambiante,
+            lo que lo convierte en un sistema complejo de sistematizar e interpretar. Este documento pretende, por un
+            lado,
+            describir las fuentes de datos pero por otro lado, también explicar y ayudar a interpretar los datos y sus
+            peculiaridades.
+        </p>
+        </section>
+        <section>
+            <h3>Fuentes de datos</h3>
+            <p>
+                De cada uno de los datos e indicadores que encontraréis en la página web, os especificamos las fuentes
+                de
+                datos.
+                Aquí ponemos un listado de todas las fuentes de datos que se están usando.
+            </p>
+            <table>
+                <caption><a href="https://catsalut.gencat.cat/ca/proveidors-professionals/registres-catalegs/registres/central-poblacio/" target="_blank">Listado
+                    de las fuentes de datos en la web</a></caption>
+                <thead>
+                <tr>
+                    <td scope="col">Fuente</td>
+                    <td scope="col">Descripción</td>
+                    <td scope="col">Datos que aporta</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">ECAP (Estación Clínica de Atención Primaria)</th>
+                    <td>Es la plataforma de la historia clínica de Atención Primaria de
+                        Cataluña. Utiliza los diagnósticos codificados con CIE-10-MC y los variables propios.
+                    </td>
+                    <td>Enfermedades respiratorias
+                        agudas - Población de residencia
+                    </td>
+
+                </tr>
+                <tr>
+                    <th scope="row">Histórico de censo hospitalario</th>
+                    <td>Ingresos en hospitales de Cataluña, sólo disponible desde el 29/04/2020</td>
+                    <td>Ingresos e ingresados - Ingresos e ingresados en UCI</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">Registro Sanitario Agregado (RSA) de Salud</th>
+                    <td>Registro centralizado de PCR/TA del sistema público de Salud.</td>
+                    <td>PCR - Defunciones</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">Orfeu</th>
+                    <td>Programa para el registro de PCR/TA, que inicialmente se utilizó para solicitar y registrar los
+                        PCR/TA de
+                        los profesionales sanitarios y de los cribados de residencias
+                    </td>
+                    <td>PCR</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">Registre central d’assegurats del CatSalut</th>
+                    <td>Registro de asignaciones de las personas a sus equipos de atención primaria</td>
+                    <td>Población - Edad - Género -
+                        Territorio
+                    </td>
+
+                </tr>
+                <tr>
+                    <th scope="row">Aplicativo piloto censo de residencias</th>
+                    <td> Aplicativo que contiene el censo actualizado de las personas residentes
+                        en residencias geriátricas, de momento en fase piloto sólo en algunos centros
+                    </td>
+                    <td>Población de residencia</td>
+
+                </tr>
+                </tbody>
+            </table>
+            <p class="descripcion_tabla"> Todos los datos han pasado por un <strong>proceso de anonimización</strong>
+                para evitar riesgos de reidentificación, algunos
+                datos se han generalizado (la edad se ha agregado en grupos de edad) o eliminado (defunciones en
+                territorios
+                que
+                no garantizan la confidencialidad de los datos sensibles) en aplicaciones técnicas de anonimización.
+            </p>
+        </section>
+        <section>
+            <h3>Fecha de inicio</h3>
+            <p>
+                La recogida de datos se inicia el
+                <time datetime="2020-03-01">01/03/2020</time>
+                .
+            </p>
+        </section>
+        <section>
+            <h3> Fecha de actualización</h3>
+            <p>
+                Los datos se publican en la web todos los días alrededor de las 10:00, pero se debe tener en cuenta lo
+                siguiente:
+            </p>
+            <ul>
+                <li>Sólo se muestran los datos hasta 3 días antes. El motivo es explica en el apartado siguiente.
+                </li>
+                <li>Aunque la publicación es a las <time time="10:00:00">10:00</time>, los datos se actualizan a las 20h del día anterior.
+                </li>
+            </ul>
+        </section>
+    </article>
+    <article>
+        <section>
+        <h2>Los datos son dinámicos</h2>
+        <p>Dada la peculiaridad de la situación, los datos pueden variar de un día a otro. Es decir, si miramos un dato
+            hoy
+            será X, pero si lo miramos 24 horas después, puede ser X+3. El motivo de la variación es diferente según el
+            dato.
+        </p>
+        <p>Aquí os presentamos el listado pero lo explicamos en detalle en el glosario de cada concepto.
+        </p>
+
+        <table>
+            <thead>
+            <tr>
+                <td scope="col">Parámetro</td>
+                <td scope="col">Motivo</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">PCR/TA</th>
+                <td><p>Cuando un profesional sanitario pide una PCR/TA, tarda en llegar un tiempo que puede variar entre
+                    horas o
+                    días. La página web incorpora las PCR/TA a medida que recibe los resultados y estos se imputan al
+                    día en que se
+                    realizó la prueba. Por eso el número de PCR/TA puede incrementar de forma retrospectiva.
+                </p>
+                    <p>Es por este motivo que la página web sólo muestra los datos de hasta 3 días antes, que es cuando ya
+                    están
+                    publicadas
+                    la mayoría de las PCR/TA, aunque un número variable se puede publicar en días posteriores.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Infecciones respiratorias agudas</th>
+                <td><p>A la hora de realizar el diagnóstico en la historia clínica, se puede
+                    especificar el día de inicio de la enfermedad, que puede ser anterior al día de la asistencia.
+                    Por eso, puede haber incrementos en el número de diagnósticos después de la fecha.</p>
+                    <p>También puede ocurrir que, después de recibir los resultados de una prueba, se modifique el
+                        diagnóstico de infección respiratoria aguda por otro diagnóstico. En este caso, el número de infecciones respiratorias
+                        agudas en la página web disminuiría.</p>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Defunciones</th>
+                <td>Las defunciones pueden llevar un cierto retraso en la notificación. En la página web, las
+                    defunciones se
+                    imputan al día de la defunción y no el día de la notificación.
+                    Por eso pueden aumentar de manera retrospectiva.
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <p class="fuente">Fuente: <a href="https://dadescovid.cat/documentacio?lang=cas" target="_blank">Salut/Datos Covid</a></p>
+        </section>
+    </article>
+
+</main>
+<footer>
+    <p>2020 © Yesenia Martínez Acevedo</p>
+    <a href="#">Aviso legal</a>
+    <a href="#">Política de privacidad</a>
+
+</footer>
+</body>
+</html>

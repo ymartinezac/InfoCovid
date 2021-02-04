@@ -1,0 +1,438 @@
+/*estilos generales: header footer y main*/
+
+body {
+    background-color: rgb(252, 252, 252);
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+    justify-content: center;
+}
+
+header {
+    background-color: #F0F1F3;
+    padding: 8px 10px 10px 14.7%;
+    min-width: 100vw;
+}
+
+header nav {
+    margin-top: -5px;
+    margin-bottom: 8px;
+}
+
+header a {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+nav .active {
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #A01127;
+}
+
+footer {
+    background-color: #BBB;
+    padding: 5px 10px 10px 10%;
+    min-width: 100vw;
+}
+
+footer a, footer p {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+main {
+    padding-left: 9.7%;
+    padding-right: 9.7%;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #77AFDF;
+    font-weight: bold;
+    margin-top: 3%;
+    margin-bottom: -5px;
+}
+
+
+p, li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: black;
+}
+
+section h1 {
+    margin-bottom: -5px;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #A01127;
+    font-weight: bold;
+
+}
+
+h2 {
+    font-size: 20px;
+    border-bottom-color: #A01127;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+
+li a, p a {
+    color: #77AFDF;
+    border-bottom: 0.5px dashed;
+    text-decoration: none;
+}
+
+li a:hover, p a:hover {
+    color: #A01127;
+    text-decoration: none;
+}
+
+.fuente a{
+    text-decoration: none;
+    color: #A01127;
+}
+.fuente a:hover{
+    color: #77AFDF;
+}
+
+nav span {
+    color: #77AFDF;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+nav a {
+    color: #77AFDF;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+article {
+    margin-top: 2.5%;
+    justify-content: center;
+}
+
+section {
+    justify-content: center;
+}
+
+.index_nav a{
+    text-decoration: none;
+}
+
+/*--------------------------------------------index.html--------------------- ---------------------------*/
+
+.home {
+    background-image: url("C:/Projects/HTML&CSS_PEC2/img/home.jpg");
+    justify-content: center;
+
+}
+
+
+/*bloque principal*/
+.bloque_principal svg {
+    margin-top: 24vh;
+}
+
+.bloque_principal {
+    margin-top: 0%;
+    text-align: center;
+}
+
+/*footer*/
+.index_footer {
+    margin-top: 18vh;
+    background-color: transparent;
+    padding: 0px;
+}
+
+.index_footer p {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.index_footer a {
+    font-size: 1em;
+    text-decoration: none;
+    color: #A01127;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+main {
+    margin: 0% 5% 0% 5%;
+}
+
+
+/*--------------------------------------datos covid-----------------------------------------*/
+
+table {
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    border-collapse: collapse;
+
+}
+
+caption {
+    margin-top: -20px;
+}
+
+caption a {
+    font-size: 11px;
+    color: black;
+    text-decoration: none;
+}
+
+tr {
+    font-style: normal;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+}
+
+thead {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    border-bottom: black;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    font-style: normal;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+}
+
+th {
+    padding: 7px;
+}
+
+td {
+    padding: 10px 23px 10px 23px;
+}
+
+caption {
+    padding: 20px;
+    font-style: italic;
+    caption-side: bottom;
+    text-align: right;
+    font-size: 14px;
+    color: black;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgba(119, 175, 223, 0.2);
+
+}
+
+
+tbody tr:nth-child(even) {
+    background-color: rgba(119, 175, 223, 0.4);
+}
+
+.descripcion_tabla {
+    margin-top: -10px;
+}
+
+.fuente {
+    font-size: 11px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/*----------- medidas de bienestar --------------*/
+ol ul li {
+    list-style-type: square;
+    line-height: 1.5;
+}
+
+ol ul {
+    line-height: 1.5;
+}
+
+.face_covid {
+    font-weight: bold;
+    color: #A01127;
+}
+
+
+.videos_medidas{
+    justify-content: center;
+    position: relative;
+}
+.videos_medidas section {
+    width: 70%;
+    margin: 0 auto;
+    text-align: justify;
+    justify-content: center;
+    position: relative;
+}
+
+.videos_medidas h3, p {
+    text-align: justify;
+}
+
+iframe{
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    display: block;
+    margin: auto;
+    border: none;
+
+}
+
+/*--------------certificado----------------------------*/
+
+fieldset legend{
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+fieldset {
+    margin-bottom: 15px;
+
+}
+
+.form_datos{
+    height: 50px;
+    margin: 1px;
+}
+.form_datos li{
+    list-style-type: none;
+    width: 33%;
+    float: left;
+    overflow: auto;
+}
+
+
+form select{
+    font-family: 'Montserrat', sans-serif;
+    display:block;
+    width: 70%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.form_datos input, label {
+    display:block;
+    width: 70%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.form_datos li{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.checkboxes li{
+    list-style-type: none;
+    display: flex;
+}
+
+.menores{
+    margin-bottom: 10px;
+
+}
+
+.menores p{
+    padding-top: 0px;
+    margin-top: 2px;
+    margin-left: 38px;
+}
+
+.menores ul {
+    margin-top: -8px;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    color: #F0F1F3;
+    background-color: #A01127;
+    border-color: #A01127;
+    border-style: none;
+    border-radius: 8px;
+    padding: 5px 15px 5px 15px;
+    box-shadow: none;
+}
+
+.instrucciones{
+    background-color: gainsboro;
+    display: inline;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.form_info h5 {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.form_info p {
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.form_info{
+    width: 65%;
+    margin-bottom: 20px;
+}
+.dni{
+    margin-top: 14px;
+}
+
+.fecha_desplazamiento{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    margin-left: 30px;
+    margin-top: 8px;
+}
+.fecha_desplazamiento input{
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+
+form{
+    margin-top: 30px;
+}
+
+input:focus:invalid, select:focus:invalid{
+    border: 2px solid crimson;
+    border-radius: 2px;
+    outline: none;
+}
+
+input:focus:valid, select:focus:valid {
+    border: 2px solid yellowgreen;
+    border-radius: 2px;
+    outline: none;
+}
+
+
+

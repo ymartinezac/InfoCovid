@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Certificado Desplazamiento</title>
+</head>
+<body>
+<header>
+    <a href="index.html">
+        <svg width="150px" height="50px" version="1.1"
+             xmlns="http://www.w3.org/2000/svg">
+            <image href="img/infocovid.svg" x="0" y="0" height="100%" width="100%"/>
+        </svg>
+    </a>
+    <nav>
+        <a href="medidas_bienestar.html">Medidas de bienestar</a>
+        <span>|</span>
+        <a href="web_salut.html">Los datos</a>
+        <span>|</span>
+        <a class="active" href="certificado.html">Certificado autorresponsable</a>
+    </nav>
+</header>
+<main>
+    <h1> Certificado autoresponsable de desplazamiento por la crisis sanitaria por la COVID-19</h1>
+
+    <p class="instrucciones">Los campos señalados con <strong><abbr title="required">*</abbr></strong> son obligatorios.
+    </p>
+
+    <form action="/" method="post">
+        <fieldset>
+            <legend>Datos personales</legend>
+
+            <ul class="form_datos">
+                <li><label for="nombre">Nombre<strong><abbr title="required">*</abbr></strong></label><input type="text"
+                                                                                                             id="nombre"
+                                                                                                             name="nombre"
+                                                                                                             minlength="2"
+                                                                                                             maxlength="64"
+                                                                                                             pattern="[a-zA-ZÀ-ÿ'-]*"
+                                                                                                             required>
+                </li>
+                <li><label for="primer_apellido">Primer apellido<strong><abbr title="required">*</abbr></strong></label>
+                    <input type="text" id="primer_apellido" name="primer apellido" minlength="2" maxlength="128"
+                           pattern="[a-zA-ZÀ-ÿ'-]*" required></li>
+                <li><label for="segundo_apellido">Segundo apellido</label> <input class="validated" type="text" id="segundo_apellido"
+                                                                                  name="segundo apellido" minlength="2"
+                                                                                  maxlength="128"
+                                                                                  pattern="[a-zA-ZÀ-ÿ'-]*"></li>
+
+                <li>
+
+                    <label for="doc_id">Documento de identificación <strong><abbr
+                            title="required">*</abbr></strong></label>
+                    <select id="doc_id" name="doc_id" required>
+                        <option value="" disabled selected>Escoge uno...</option>
+                        <option value="dni">DNI/NIF</option>
+                        <option value="nie">NIE</option>
+                        <option value="pasaporte">Pasaporte</option>
+                    </select>
+
+
+                </li>
+                <li><input class="dni" type="text" id="num_doc_id" name="dni o pasaporte" pattern="[0-9]*" required>
+                </li>
+            </ul>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                Trayecto
+            </legend>
+
+            <div class="fecha_desplazamiento">
+                <label for="fecha_desplazamiento">Fecha del desplazamiento<strong
+                        title="required">*</strong></label>
+                <input type="date" name="fecha desplazamiento" id="fecha_desplazamiento" required>
+            </div>
+            <ul class="checkboxes">
+                <li><p>Certifico que mi desplazamiento está relacionado con la actividad especificada a
+                    continuación (marcad la casilla):</p>
+                </li>
+
+                <li><input type="checkbox" id="adquisicion_articulos" name="adquisición artículos"
+                           value="adquisicion_articulos"><label for="adquisicion_articulos">Adquisición
+                    de alimentos, productos farmacéuticos y de primera necesidad.</label>
+                </li>
+                <li><input type="checkbox" id="asistencia_sanitaria" name="asistencia sanitaria"
+                           value="asistencia_sanitaria"><label for="asistencia_sanitaria">Asistencia
+                    a centro, servicio o establecimiento sanitario.</label>
+                </li>
+                <li><input type="checkbox" id="desplazamiento_trabajo" name="desplazamiento trabajo"
+                           value="desplazamiento_trabajo"><label
+                        for="desplazamiento_trabajo">Desplazamiento al lugar de trabajo para efectuar la prestación
+                    laboral,
+                    profesional o empresarial.</label>
+                </li>
+                <li><input type="checkbox" id="regreso_residencia" name="regreso residencia" value="regreso_residencia"><label
+                        for="regreso_residencia">Regreso al lugar de residencia habitual.</label>
+                </li>
+                <li><input type="checkbox" id="asistencia_dependientes" name="asistencia dependientes"
+                           value="asistencia_dependientes"><label
+                        for="asistencia_dependientes">Asistencia o atención a personas mayores, menores de edad,
+                    dependientes, personas con discapacidad o personas especialmente vulnerables.</label>
+                </li>
+                <li><input type="checkbox" id="desplazamiento_entidad_financiera"
+                           name="desplazamiento entidad financiera" value="desplazamiento_entidad_financiera"><label
+                        for="desplazamiento_entidad_financiera">Desplazamiento entidad financiera o de seguro.</label>
+                </li>
+                <li><input type="checkbox" id="situacion_necesidad" name="situación necesidad"
+                           value="situacion_necesidad"><label
+                        for="situacion_necesidad">Causa de fuerza mayor o situación de necesidad.</label>
+                </li>
+                <li><input type="checkbox" id="salida_menores" name="salida menores" value="salida_menores"><label
+                        for="salida_menores">Salida de niños y adolescentes.</label>
+                </li>
+                <li>
+                    <div id="menores" class="menores">
+                        <p>Número de menores:</p>
+                        <ul>
+                            <li><label for="menor1"><input type="radio" id="menor1" name="Número de menores" value="1">1</label>
+                            </li>
+                            <li><label for="menor2"><input type="radio" id="menor2" name="Número de menores" value="2">2</label>
+                            </li>
+                            <li><label for="menor3"><input type="radio" id="menor3" name="Número de menores" value="3">3</label>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><input type="checkbox" id="salida_mayores" name="salida mayores" value="salida_mayores"><label
+                        for="salida_mayores">Salida paseos mayores de 70 años y dependientes</label>
+                </li>
+                <li><input type="checkbox" id="actividad_fisica" name="actividad física" value="actividad_fisica"><label
+                        for="actividad_fisica">Salida actividad física y paseo a partir de 14 años</label>
+                </li>
+
+            </ul>
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Dirección de origen</legend>
+            <ul class="form_datos">
+                <li><label for="origen_postal">Código postal<strong><abbr title="required">*</abbr></strong></label>
+                    <input type="text" id="origen_postal" name="origen codigo postal" minlength="2" maxlength="6"
+                           pattern="[0-9]*" required></li>
+                <li><label for=origen_provincia>Provincia<strong><abbr title="required">*</abbr></strong></label>
+                    <input type="text" id="origen_provincia" name="origen provincia" minlength="2" maxlength="128"
+                           pattern="[a-zA-ZÀ-ÿ'-]*" required>
+                </li>
+                <li><label for="origen_comarca">Comarca</label>
+                    <input type="text" id="origen_comarca" name="origen comarca" minlength="2" maxlength="128"
+                           pattern="[a-zA-ZÀ-ÿ'-]*"></li>
+                <li><label for="origen_municipio">Municipio<strong><abbr title="required">*</abbr></strong></label>
+                    <input type="text" id="origen_municipio" name="origen municipio" minlength="2" maxlength="128"
+                           pattern="[a-zA-ZÀ-ÿ'-]*" required>
+                </li>
+            </ul>
+
+
+        </fieldset>
+        <fieldset>
+            <legend>Dirección de destino</legend>
+            <ul class="form_datos">
+                <li><label for="destino_postal">Código postal<strong><abbr title="required">*</abbr></strong></label>
+                    <input type="text" id="destino_postal" name="destino postal" minlength="2" maxlength="6"
+                           pattern="[0-9]*" required></li>
+                <li><label for=origen_provincia>Provincia<strong><abbr title="required">*</abbr></strong></label>
+                    <input type="text" id="destino_provincia" name="destino provincia" minlength="2" maxlength="128"
+                           pattern="[a-zA-ZÀ-ÿ'-]*" required>
+                </li>
+                <li><label for="destino_comarca">Comarca</label>
+                    <input type="text" id="destino_comarca" name="destino comarca" minlength="2" maxlength="128"
+                           pattern="[a-zA-ZÀ-ÿ'-]*"></li>
+                <li><label for="destino_municipio">Municipio<strong><abbr title="required">*</abbr></strong></label>
+                    <input type="text" id="destino_municipio" name="destino municipio" minlength="2" maxlength="128"
+                           pattern="[a-zA-ZÀ-ÿ'-]*" required>
+                </li>
+            </ul>
+
+        </fieldset>
+        <div class="form_info">
+            <h5>Información básica relativa a la protección de datos</h5>
+            <p>
+                Le informamos que los datos recogidos serán tratadas por la Dirección General de Administración Digital,
+                del Departamento de Políticas Digitales y Administración Pública de la Generalitat de Cataluña, para
+                apoyarle en la elaboración de la declaración autoresponsable. Podrá ejercer los derechos de acceso,
+                rectificació,
+                supressió, oposició al tractament i sol·licitud de limitació de les dades mitjançant el següent enllaç:
+                <a href="http://politiquesdigitals.gencat.cat/ca/pgov_departament/proteccio-de-dades/drets-de-les-persones-interessades/" target="_blank">
+                    http://politiquesdigitals.gencat.cat/ca/pgov_departament/proteccio-de-dades/drets-de-les-persones-interessades/</a>
+            </p>
+        </div>
+        <button type="submit">Generar certificado</button>
+    </form>
+
+
+    <p class="fuente">Fuente: <a href="https://certificatdes.confinapp.cat/" target="_blank">Certificado autoresponsable de
+        desplazamiento por la crisis sanitaria por la COVID-19 </a></p>
+
+
+</main>
+<footer>
+    <p>2020 © Yesenia Martínez Acevedo</p>
+    <a href="#">Aviso legal</a>
+    <a href="#">Política de privacidad</a>
+
+</footer>
+</body>
+</html>
