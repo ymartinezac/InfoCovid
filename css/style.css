@@ -134,7 +134,7 @@ section {
 /*--------------------------------------------index.html--------------------- ---------------------------*/
 
 .home {
-    background-image: url("C:/Projects/HTML&CSS_PEC2/img/home.jpg");
+    background-image: url("../img/home.jpg");
     justify-content: center;
 
 }
